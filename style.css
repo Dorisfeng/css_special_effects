@@ -2,12 +2,14 @@
   width: 200px;
   height: 200px;
   background: conic-gradient(red, #ff4d00, #ff9900, #ffe600, #ccff00, #80ff00, #33ff00, #00ff1a, #00ff66, #00ffb3, cyan, #00b3ff, #0066ff, #001aff, #3300ff, #8000ff, #cc00ff, #ff00e6, #ff0099, #ff004d, red);
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin: 0 auto; }
 
 .example8 {
+  margin: 0 auto;
   width: 250px;
   height: 250px;
-  background: conic-gradient(#8a11d4, #8a2010, #78bcd1, #613f6a, #423115, #c91dfa, #f11170, #a8f9b0, #d9d0c3, #c03fff, #da6508, #6ea0c0, #97c6f4, #ca317e, #17bdf4, #f4aaee, #e73dbb, #aca73b, #0fea25, #9db413, #dc37cb, #ff1e06, #88fbff, #d0c045, #842317, #65a603, #8a11d4, #8a2010, #78bcd1, #613f6a, #423115, #c91dfa, #f11170, #a8f9b0, #d9d0c3, #c03fff, #da6508, #6ea0c0, #97c6f4, #ca317e, #17bdf4, #f4aaee, #e73dbb, #aca73b, #0fea25, #9db413, #dc37cb, #ff1e06, #88fbff, #d0c045, #842317);
+  background: conic-gradient(#36f70e, #756535, #3ea143, #cef5fe, #198e57, #e4122b, #b12cc4, #f1160f, #af1d33, #fb527f, #cd42c1, #73ed56, #36f70e, #756535, #3ea143, #cef5fe, #198e57, #e4122b, #b12cc4, #f1160f, #af1d33, #fb527f, #cd42c1);
   animation: spin 1s linear infinite; }
 @keyframes spin {
   to {
