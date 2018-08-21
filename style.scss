@@ -1,0 +1,54 @@
+$colors: ();
+$totalStops:20;
+ 
+@for $i from 0 through $totalStops{
+    $colors: append($colors, hsl($i *(360deg/$totalStops), 100%, 50%), comma);
+}
+ 
+ 
+.colors {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient($colors);
+    border-radius: 50%;
+}
+@function randomNum($max, $min: 0, $u: 1) {
+
+    @return ($min + random($max)) * $u;
+
+}
+
+
+@function randomConicGradient() {
+
+    $n: random(30) + 10;
+
+    $list: ();
+    @for $i from 0 to $n {
+
+        $list: $list, rgb(randomNum(255), randomNum(255), randomNum(255));
+
+    }  
+   @return  conic-gradient($list, nth($list, 1));
+
+}
+.example8{
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // margin: -100vmax;
+    // width: 200vmax;
+    // height: 200vmax;
+    
+    width:250px;
+    height:250px;
+    background: randomConicGradient();
+    animation:spin 1s linear infinite;
+    @keyframes spin{
+        to{
+            
+            transform:rotate(1turn)
+        }
+    }
+    
+}
