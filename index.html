@@ -55,8 +55,16 @@
                 </div>
 
         </div>
-      
+        <h2>按钮特效</h2>
+        <button class='button'><span>Hover me I'm awesome</span></button>
     </body>
-
+    <script>
+        document.getElementsByClassName('button')[0].onmousemove=(e)=>{
+            const x=e.pageX-e.target.offsetLeft;
+            const y=e.pageY-e.target.offsetTop;
+            e.target.style.setProperty('--x', `${ x }px`)
+            e.target.style.setProperty('--y', `${ y }px`)
+        }
+    </script>
 </html>
 
