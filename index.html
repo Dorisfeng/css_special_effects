@@ -53,13 +53,32 @@
                 <div class='bg'>
                     <div class='point'></div>
                 </div>
-
         </div>
         <h2>按钮特效</h2>
-        <button class='button'><span>Hover me I'm awesome</span></button>
+        <button class='buttonHover'><span>Hover me I'm awesome</span></button>
+        <h2>神奇的css3混合模式</h2>
+        <div class='mix-div1'>   
+            <h1>HELLO</h1>
+        </div>
+        <div class='mix-div2'>
+            <div class='isolateContainer'>
+                    <span>Colorful</span>
+                    <span>words</span>
+            </div>
+        </div>
+        <div class='mix-div3'>
+            <div class='pic'></div>
+            <div class='text'>Girl</div>
+        </div>
+        <div  class='mix-div4'>
+            <div  class='pic'>
+            </div>
+        </div>
+       
+
     </body>
     <script>
-        document.getElementsByClassName('button')[0].onmousemove=(e)=>{
+        document.getElementsByClassName('buttonHover')[0].onmousemove=(e)=>{
             const x=e.pageX-e.target.offsetLeft;
             const y=e.pageY-e.target.offsetTop;
             e.target.style.setProperty('--x', `${ x }px`)
