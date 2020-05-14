@@ -1,105 +1,126 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta  charset="utf-8"/>
-        
-        <link rel="stylesheet/less" type="text/css" href="index.less" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <!-- <script src="less.min.js"  ></script> -->
-    </head>
-   
-    <title>css小例子</title>
-  
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
-    <script src="https://leaverou.github.io/conic-gradient/conic-gradient.js"></script>
-    <body>
-        <h2>圆锥渐变</h2>
-        <div class='content'>
-                <p>基础例子</p>
-                <div class='example1' ></div>
-                <p>彩虹</p>
-                <div class='example2'></div>
-                <p>
-                    <pre>优化：hsl() 被定义为色相-饱和度-明度
-                        过渡 hsl(0%, 100%, 50%) –> hsl(100%, 100%, 50%)
-                        scss，css
-                        安装ruby 
-                        brew install ruby
-                        安装sass  gem install sass
-                        修改scss后 将scss转为css  sass style.scss  style.css
-                       </pre>
-                </p>
-               
-                <div class='colors'></div>
-                <p>配合百分比使用,实现饼图</p>
-                <div class='example3'></div>
-                <p>饼图实现的另一种方法</p>
-                <pre>
-                    0-30% 的区间使用 deeppink
-                    0-70% 的区间使用 yellowgreen
-                    0-100% 的区间使用 teal
-                    先定义的颜色层叠在后定义的颜色之上
-                </pre>
-                <div class='example4'></div>
-                <p>配合backgound-size基础</p>
-                <div class='example5'></div>
-                <p>配合backgound-size</p>
-                <div class='example6'></div>
-                <p>重复圆锥渐变</p>
-                <div class='example7'></div>
-                <p>圆锥渐变动画</p>
-                <div class='example8'></div>
-                <p>实际应用-仪表盘</p>
-                <div class='bg'>
-                    <div class='point'></div>
-                </div>
-        </div>
-        <h2>按钮特效</h2>
-        <button class='buttonHover'><span>Hover me I'm awesome</span></button>
-        <h2>神奇的css3混合模式</h2>
-        <div class='mix-div1'>   
-            <h1>HELLO</h1>
-        </div>
-        <div class='mix-div2'>
-            <div class='isolateContainer'>
-                    <span>Colorful</span>
-                    <span>words</span>
-            </div>
-        </div>
-        <div class='mix-div3'>
-            <div class='pic'></div>
-            <div class='text'>Girl</div>
-        </div>
-        <div  class='mix-div4'>
-            <div  class='pic'>
-            </div>
-        </div>
-        
-        <h1>旋转木马</h1>
-        <div class='carousel'>
-            <div class='container'>
-                <img src='./image/1.png'/>
-                <img src='./image/2.png'/>
-                <img src='./image/3.png'/>
-                <img src='./image/4.png'/>
-                <img src='./image/5.png'/>
-                <img src='./image/6.png'/>
-                <img src='./image/7.png'/>
-                <img src='./image/8.png'/>
-                <img src='./image/9.png'/>
 
-            </div>
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet/less" type="text/css" href="index.less" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="less.min.js"></script>
+</head>
+
+<title>css小例子</title>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+<script src="https://leaverou.github.io/conic-gradient/conic-gradient.js"></script>
+
+<body>
+    <h2>圆锥渐变</h2>
+    <div class='content'>
+        <p>基础例子</p>
+        <div class='example1'></div>
+        <p>彩虹</p>
+        <div class='example2'></div>
+        <p>
+            <pre>
+                优化：hsl() 被定义为色相-饱和度-明度
+                过渡 hsl(0%, 100%, 50%) –> hsl(100%, 100%, 50%)
+                scss，css
+                安装ruby 
+                brew install ruby
+                安装sass  gem install sass
+                修改scss后 将scss转为css  sass style.scss  style.css
+             </pre>
+        </p>
+
+        <div class='colors'></div>
+        <p>配合百分比使用,实现饼图</p>
+        <div class='example3'></div>
+        <p>饼图实现的另一种方法</p>
+        <pre>
+            0-30% 的区间使用 deeppink
+            0-70% 的区间使用 yellowgreen
+            0-100% 的区间使用 teal
+            先定义的颜色层叠在后定义的颜色之上
+        </pre>
+        <div class='example4'></div>
+        <p>配合backgound-size基础</p>
+        <div class='example5'></div>
+        <p>配合backgound-size</p>
+        <div class='example6'></div>
+        <p>重复圆锥渐变</p>
+        <div class='example7'></div>
+        <p>圆锥渐变动画</p>
+        <div class='example8'></div>
+        <p>实际应用-仪表盘</p>
+        <div class='bg'>
+            <div class='point'></div>
+        </div>
+    </div>
+    <h2>按钮特效</h2>
+    <button class='buttonHover'><span>Hover me I'm awesome</span></button>
+    <h2>神奇的css3混合模式</h2>
+    <div class='mix-div1'>
+        <h1>HELLO</h1>
+    </div>
+    <div class='mix-div2'>
+        <div class='isolateContainer'>
+            <span>Colorful</span>
+            <span>words</span>
+        </div>
+    </div>
+    <div class='mix-div3'>
+        <div class='pic'></div>
+        <div class='text'>Girl</div>
+    </div>
+    <div class='mix-div4'>
+        <div class='pic'>
+        </div>
+    </div>
+
+    <h1>旋转木马</h1>
+    <div class='carousel'>
+        <div class='container'>
+            <img src='./image/1.png' />
+            <img src='./image/2.png' />
+            <img src='./image/3.png' />
+            <img src='./image/4.png' />
+            <img src='./image/5.png' />
+            <img src='./image/6.png' />
+            <img src='./image/7.png' />
+            <img src='./image/8.png' />
+            <img src='./image/9.png' />
 
         </div>
 
-    </body>
-    <script>
-        document.getElementsByClassName('buttonHover')[0].onmousemove=(e)=>{
-            const x=e.pageX-e.target.offsetLeft;
-            const y=e.pageY-e.target.offsetTop;
-            e.target.style.setProperty('--x', `${ x }px`)
-            e.target.style.setProperty('--y', `${ y }px`)
-        }
-    </script>
+    </div>
+
+    <h1>宽度固定，字体大小随字数多少变化</h1>
+    <div class="hd">
+        <span class="hd-text">沪深300ETF</span>
+    </div>
+    <div class="hd">
+        <span class="hd-text">券商ETF</span>
+    </div>
+
+</body>
+<script>
+    document.getElementsByClassName('buttonHover')[0].onmousemove = (e) => {
+        const x = e.pageX - e.target.offsetLeft;
+        const y = e.pageY - e.target.offsetTop;
+        e.target.style.setProperty('--x', `${ x }px`)
+        e.target.style.setProperty('--y', `${ y }px`)
+    }
+
+    var list = document.getElementsByClassName('hd');
+    for (let index in list) {
+        var hdWidth = list[index].offsetWidth - 10;
+        var textWidth = document.getElementsByClassName('hd-text')[index].offsetWidth;
+        var scale = hdWidth / textWidth;
+        console.log(hdWidth, textWidth, scale)
+        document.getElementsByClassName('hd-text')[index].style.zoom = scale;
+    }
+</script>
+</script>
+
 </html>
-
